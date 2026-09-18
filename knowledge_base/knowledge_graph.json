@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "source": "curated Obsidian wiki notes",
+  "excluded_sources": ["Raw quick Text.md"],
+  "nodes": [
+    {"id": "coding/clean-code-principles", "title": "Clean Code Principles", "category": "Coding"},
+    {"id": "coding/git-basics", "title": "Git Basics", "category": "Coding"},
+    {"id": "coding/code-complexity", "title": "Code Complexity", "category": "Coding"},
+    {"id": "cooking/flavor-balancing-101", "title": "Flavor Balancing 101", "category": "Cooking"},
+    {"id": "cooking/maillard-reaction", "title": "Maillard Reaction", "category": "Cooking"},
+    {"id": "meta-learning/feynman-technique", "title": "Feynman Technique", "category": "Meta-Learning"},
+    {"id": "meta-learning/active-recall", "title": "Active Recall", "category": "Meta-Learning"}
+  ],
+  "edges": [
+    ["coding/clean-code-principles", "coding/code-complexity", "informed_by"],
+    ["coding/clean-code-principles", "coding/git-basics", "workflow"],
+    ["coding/clean-code-principles", "meta-learning/feynman-technique", "explained_with"],
+    ["cooking/flavor-balancing-101", "cooking/maillard-reaction", "technique"],
+    ["meta-learning/feynman-technique", "meta-learning/active-recall", "study_method"],
+    ["coding/code-complexity", "coding/git-basics", "change_risk" ]
+  ]
+}
